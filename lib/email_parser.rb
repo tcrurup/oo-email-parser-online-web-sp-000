@@ -12,6 +12,6 @@ class EmailParser
   end
   
   def parse
-    self.emails
+    self.emails.uniq.collect{ |emails| emails != "" }
   end
 end
