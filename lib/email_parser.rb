@@ -12,6 +12,6 @@ class EmailParser
   end
   
   def parse
-    self.emails
+    self.emails.collect{ |email| email.trim
   end
 end
