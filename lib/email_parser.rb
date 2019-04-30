@@ -8,10 +8,11 @@ class EmailParser
   attr_accessor :emails 
   
   def initialize(emails_list)
-    self.emails = emails_list.split(",")
+    
+    self.emails = emails_list.split(/[, ]/)
   end
   
   def parse
-    self.emails.collect{ |email| email.strip }
+    
   end
 end
